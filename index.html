@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora&PT+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>First Website</title>
+  </head>
+  <body>
+    <main>
+      <section class="landing">
+        <nav>
+          <h1 id="logo-name">Simon Nikolaidis</h1>
+          <ul class="nav-links">
+            <li>Home</li>
+            <li>GitHub</li>
+            <li>Instagram</li>
+          </ul>
+        </nav>
+        <h2 class="big-text">
+          Click on a button <br />
+          to learn more about me
+        </h2>
+        <div class="button-div">
+          <button class="learn-more-btn" onClick="scrollWhoami()">
+            Who am I?
+          </button>
+          <button class="learn-more-btn" onclick="scrollQualifications()">
+            My Qualifications
+          </button>
+          <button class="learn-more-btn" onclick="scrollFreetime()">
+            My Hobbies
+          </button>
+        </div>
+      </section>
+    </main>
+    <div>
+      <div class="whoami" id="whoami">
+        <div class="whoami-text">
+          <h1 class="hide">
+            <span class="whoami-headline">Who am I?</span>
+          </h1>
+          <p class="hide">
+            <span class="whoami-text"
+              >Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.<br /><br /><br />
+              <button class="learn-more-btn" onclick="scrollQualifications()">
+                Next
+              </button></span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="whoami" id="qualifications">
+        <div class="whoami-text">
+          <h1 class="hide-q">
+            <span class="headline-q">My Qualifications and Skills</span>
+          </h1>
+          <p class="hide-q">
+            <span class="text-q"
+              >Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.<br /><br /><br />
+              <button class="learn-more-btn" onclick="scrollFreetime()">
+                Next
+              </button></span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="whoami" id="freetime">
+        <div class="whoami-text">
+          <h1 class="hide">
+            <span class="freetime-headline">How I spend my freetime</span>
+          </h1>
+          <p class="hide">
+            <span class="freetime-text"
+              >Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.<br /><br /><br />
+              <button
+                class="learn-more-btn"
+                onclick="document.body.scrollTop = document.documentElement.scrollTop = 0;"
+              >
+                Back
+              </button></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
