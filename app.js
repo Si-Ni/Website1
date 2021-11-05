@@ -1,3 +1,17 @@
+const t4 = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+t4.to(".intro-name", { y: "0%", duration: 1, stagger: 0.5 });
+t4.to(".slider", { y: "-100%", duration: 1.5, delay: 0.25 });
+t4.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+t4.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
+t4.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
+t4.fromTo(
+  ".learn-more-btn",
+  { opacity: 0 },
+  { opacity: 1, duration: 1 },
+  "-=1"
+);
+
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 const t2 = gsap.timeline({ defaults: { ease: "power1.out" } });
 const t3 = gsap.timeline({ defaults: { ease: "power1.out" } });
@@ -14,7 +28,7 @@ $(window).scroll(function () {
     hH = $("#whoami").outerHeight(),
     wH = $(window).height(),
     wS = $(this).scrollTop();
-  if (wS + 100 > hT + hH - wH || wS - 100 > hT + hH - wH) {
+  if (wS + 300 > hT + hH - wH || wS - 300 > hT + hH - wH) {
     tl.to(".whoami-headline", { y: "0%", duration: 1 });
     tl.to(".whoami-text", { y: "0%", duration: 1 });
   }
@@ -22,7 +36,7 @@ $(window).scroll(function () {
     hH2 = $("#qualifications").outerHeight(),
     wH2 = $(window).height(),
     wS2 = $(this).scrollTop();
-  if (wS2 + 100 > hT2 + hH2 - wH2 || wS2 - 100 > hT2 + hH2 - wH2) {
+  if (wS2 + 300 > hT2 + hH2 - wH2 || wS2 - 300 > hT2 + hH2 - wH2) {
     t2.to(".headline-q", { y: "0%", duration: 1 });
     t2.to(".text-q", { y: "0%", duration: 1 });
   }
@@ -30,7 +44,7 @@ $(window).scroll(function () {
     hH3 = $("#freetime").outerHeight(),
     wH3 = $(window).height(),
     wS3 = $(this).scrollTop();
-  if (wS3 + 100 > hT3 + hH3 - wH3 || wS3 - 100 > hT3 + hH3 - wH3) {
+  if (wS3 + 300 > hT3 + hH3 - wH3 || wS3 - 300 > hT3 + hH3 - wH3) {
     t3.to(".freetime-headline", { y: "0%", duration: 1 });
     t3.to(".freetime-text", { y: "0%", duration: 1 });
   }
