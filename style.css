@@ -18,24 +18,30 @@ main {
 }
 
 .landing {
-  min-height: 100vh;
   background-image: url("./background.jpg");
   background-size: cover;
+  min-height: 100vh;
   background-position: center;
   padding: 0rem 3rem;
 }
 
 nav {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 7, 17, 0.8);
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 10vh;
+  min-height: 6vh;
+  overflow: hidden;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  margin-right: 10%;
+  margin-right: 14%;
 }
 
 .nav-links li {
@@ -46,6 +52,7 @@ nav {
 }
 
 #logo-name {
+  color: white;
   font-family: "Lobster", cursive;
   font-size: 2rem;
   font-weight: lighter;
@@ -164,13 +171,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 10vh;
+    min-height: 6vh;
   }
 
   .nav-links {
     display: flex;
     list-style: none;
-    margin-right: 0%;
+    margin-right: 10%;
   }
 
   .nav-links li {
@@ -231,6 +238,6 @@ html {
 }
 
 .nav-links a {
-  color: black;
+  color: white;
   text-decoration: inherit;
 }
