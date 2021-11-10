@@ -12,48 +12,57 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
-    <title>First Website</title>
+    <title>Simon Nikolaidis</title>
   </head>
   <body>
+    <div class="Fehler">
+      Bitte wechsel zu einem Gerät mit einem breiteren Display. 
+      Diese Seite ist noch nicht für die Breite optimiert, welche du nutzt.
+      Den Anblick auf diesem Gerät solltest du dir lieber ersparen. </div>
     <nav>
       <h1 id="logo-name">Simon Nikolaidis</h1>
-      <ul class="nav-links">
-        <li>
-          <a onclick="document.body.scrollTop = document.documentElement.scrollTop = 0;">Home</a>
-        </li>
-        <li>
-          <a
+        <div class="link-container">
+        <a class="home" onclick="document.body.scrollTop = document.documentElement.scrollTop = 0;">Home</a>
+        <div class="dropdown">
+          <button onclick='location.href = "https://github.com/Si-Ni";' class="dropbtn">Mehr</button>
+          <div class="dropdown-content">
+            <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/Si-Ni"
             >GitHub</a
           >
-        </li>
-        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.codewars.com/users/Si_Ni"
+            >Codewars</a
+          >
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.instagram.com/simon_nikolaidis/?hl=de"
             >Instagram</a
           >
-        </li>
-      </ul>
+          </div>
+        </div>
+      </div>
     </nav>
     <main>
       <section class="landing">
         <h2 class="big-text">
-          Click on a button <br />
-          to learn more about me
+          Klick auf einen Button, <br />
+          um mehr über mich zu erfahren
         </h2>
         <div class="button-div">
           <button class="learn-more-btn" onClick="scrollWhoami()">
-            Who am I?
+            Wer bin ich?
           </button>
           <button class="learn-more-btn" onclick="scrollQualifications()">
-            My Qualifications
+            Meine Qualifikationen
           </button>
           <button class="learn-more-btn" onclick="scrollFreetime()">
-            My Hobbies
+            Meine Hobbys
           </button>
         </div>
       </section>
@@ -68,24 +77,22 @@
         <div class="whoami-text">
           <h1 class="hide">
             <span class="whoami-headline"
-              >Who am I? <br />
+              >Wer bin ich? <br />
             <img src="portrait.jpg" alt="Portrait of me" height="200" />
             </span>
           </h1>
           <p class="hide">
             <span class="whoami-text"
-              >Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.<br /><br /><br />
+              >Hey, mein Name ist Simon Nikolaidis und ich bin 19 Jahre alt. Ich studiere
+              aktuell dual Informatik an der Berufsakademie in Leipzig. Allgemein interessiere
+              und beschäftige ich mich sehr gern mit allem, was mit Informatik zu tun hat. Egal
+              ob Backend, Frontend, CyberSecurity, Forschung usw. Mein Praxispartner fürs Studium
+              ist die CSD Transport Software GmbH, wo ich hauptsächlich im Bereich Webentwicklung tätig bin.
+              Jedoch habe ich auch die Möglichkeit immer wieder in andere Bereiche reinzuschauen, wodurch ich täglich 
+              etwas neues lerne und mich in viele Richtungen weiterbilde. 
+              Immer wieder etwas neues zu lernen ist mir sehr wichtig.<br /><br /><br />
               <button class="learn-more-btn" onclick="scrollQualifications()">
-                Next
+                Weiter
               </button></span
             >
           </p>
@@ -94,22 +101,25 @@
       <div class="whoami" id="qualifications">
         <div class="whoami-text">
           <h1 class="hide-q">
-            <span class="headline-q">My Qualifications and Skills</span>
+            <span class="headline-q">Meine Qualifikationen</span>
           </h1>
           <p class="hide-q">
             <span class="text-q"
-              >Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.<br /><br /><br />
+              >Ich habe mein Abitur im Jahr 2021 mit sehr guten Leistungen abgeschlossen. Meine 
+              Leistungskurswahl im Abitur mit Mathematik und Physik zeigt bereites, dass ich ein großes 
+              Interesse am logischen Denken, Rechnen und Problemlösen habe. Ich programmiere schon seit einigen Jahren
+              in verschiedenen Programmiersprachen, dazu zählen beispielsweise Java, Pascal und Javascript. Dadurch entstanden bereits 
+              einige kleine und größere Projekte, wie eine Chatapp mit Server, Datenbank und Userlogin, eine Lernapp, eine To-Do Liste
+              und viele weitere, von denen die meisten auf meiner GitHub Seite zu finden sind. Dadurch kam ich natürlich sowohl mit den Herausforderungen im
+              Frontend, sowie mit denen im Backend in Kontakt, wodurch ich mich mit dem Design von User Interfaces mit HTML, CSS, Javascript und React.js beschäftigte, mit dem
+              Hosten von Servern, durch beispielsweise Node.js und Express, sowie mit der Kommunikation zwischen Server und Client mithilfe von Sockets und Requests und natülich 
+              der Arbeit mit Datenbanken. Natürlich darf da die Sicherheitskomponente nicht vernachlässigt werden, denn Schwachstellen für SQL-Injections und weiteres möchte keiner in seiner Applikation.
+              Außerdem interessiere ich mich sehr für viele verschiedene Algorithmen, künstliche Intelligenz (bspw. Machine Learning - genetische Algorithmen) und die Visualisierung von 
+              verschiedenen Problemen, Daten oder Algorithmen.<br>
+              Wenn man gemeinsam an einem größeren Projekt arbeitet, ist eine gute Teamarbeit natürlich eine essentielle Voraussetzung, die man keinesfalls vergessen sollte und die mir sehr wichtig ist.
+              <br /><br /><br />
               <button class="learn-more-btn" onclick="scrollFreetime()">
-                Next
+                Weiter
               </button></span
             >
           </p>
@@ -118,25 +128,24 @@
       <div class="whoami" id="freetime">
         <div class="whoami-text">
           <h1 class="hide">
-            <span class="freetime-headline">How I spend my freetime</span>
+            <span class="freetime-headline">Meine Freizeit</span>
           </h1>
           <p class="hide">
             <span class="freetime-text"
-              >Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.<br /><br /><br />
+            >
+            Auch in meiner Freizeit spielt das Thema Informatik eine gewisse Rolle. Dazu gehört beispielsweise, dass ich 
+            immer wieder gern Coding Challenges löse (siehe Codewars als Beispiel) oder mich auch an Hacking/Pentesting Challenges (Bsp.: HackTheBox)
+            versuche. Außerdem spiele ich auch gern mal ein paar Computerspiele. Den Großteil meiner Freizeit sitze ich jedoch nicht am Computer, dann
+            treffe ich mich gern mit Freunden, um beispielsweise Poker zu spielen oder einfach mal irgendwo gemeinsam Zeit zu verbringen und sich zu entspannen. Oder ich nutze die Zeit, 
+            um etwas mit meiner Freundin zu unternehmen, dazu zählt zum Beispiel, dass wir gemeinsam klettern oder wandern gehen. Sport ist mir ebenfalls wichtig und ich trainiere 
+            mindestens 3 mal in der Woche Calisthenics, um fit zu bleiben und Körper und Psyche zu stärken. Apropos Psyche. Auch in meiner Freizeit lerne ich gern etwas Neues und bilde 
+            mich in verschiedenen Bereichen weiter. Deshalb lese ich sehr gerne Bücher, die mich interessieren und aus denen ich viel lernen kann, wie zum Beispiel über das Thema 
+            Psychologie.<br /><br /><br />
               <button
                 class="learn-more-btn"
                 onclick="document.body.scrollTop = document.documentElement.scrollTop = 0;"
               >
-                Back
+                Zurück
               </button></span
             >
           </p>
